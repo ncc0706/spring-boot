@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: spring-boot-thymeleaf
+  mandatory-file-encoding: UTF-8
+  thymeleaf:
+    cache: false
+server:
+  port: 4200
