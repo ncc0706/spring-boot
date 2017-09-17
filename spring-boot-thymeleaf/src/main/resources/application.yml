@@ -1,9 +1,23 @@
 
+
 spring:
   application:
     name: spring-boot-thymeleaf
   mandatory-file-encoding: UTF-8
   thymeleaf:
     cache: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+#    url: jdbc:h2:mem:test
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+    url: jdbc:h2:~/.h2/arukas
 server:
   port: 4200
+logging:
+  level:
+    io.arukas: debug
